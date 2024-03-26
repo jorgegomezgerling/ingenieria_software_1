@@ -9,7 +9,7 @@
 "fecha_cambio_password"	:	"29/09/2023",
 "fecha_ultimo_ingreso"  :	"29/09/2023",
 "nombre"		:	"Pedro E. Colla",
-"password"		:	"secret"
+"password"		:	"not-secret"
 },
 {
 "id"	 		:	2,
