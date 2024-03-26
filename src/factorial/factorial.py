@@ -21,22 +21,30 @@ def factorial(num):
 
 # Verificar si se proporcionó el rango como argumento en la línea de comandos
 if len(sys.argv) < 2:  
-    range_str = input("Ingrese un rango de números (desde-hasta) para calcular los factoriales: ")
+    range_str = input("Ingrese un rango de números (desde-hasta, -hasta o desde-) para calcular los factoriales: ")
 else:
     range_str = sys.argv[1]
 
 # Separar el rango en los números desde y hasta
 range_parts = range_str.split("-")
 if len(range_parts) != 2:
-    print("Formato de rango incorrecto. Debe darse un rango")
+    print("Formato de rango incorrecto. Debe ser desde-hasta, -hasta o desde-, por ejemplo, 4-8 o -10.")
     sys.exit(1)
 
-from_num = int(range_parts[0])
-to_num = int(range_parts[1])
+if range_parts[0] == '':
+    from_num = 1
+else:
+    from_num = int(range_parts[0])
+
+if range_parts[1] == '':
+    to_num = 60
+else:
+    to_num = int(range_parts[1])
 
 # Calcular los factoriales dentro del rango
 for num in range(from_num, to_num + 1):
     print("Factorial de", num, "! es", factorial(num))
+
 
 
 
