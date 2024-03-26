@@ -3,7 +3,7 @@
 {
 "id"	 		:	1,
 "activo"		:	false,
-"registrado"		:	false,
+"registrado"		:	true,
 "contacto"		:	"pedro_colla@hotmail.com",
 "fecha_alta"		:	"29/09/2023",
 "fecha_cambio_password"	:	"29/09/2023",
