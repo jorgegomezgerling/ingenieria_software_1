@@ -7,6 +7,9 @@
 #*-------------------------------------------------------------------------*
 import sys
 
+# Comentario inicial
+
+
 def factorial(num): 
     if num < 0: 
         print("Factorial de un número negativo no existe")
@@ -48,3 +51,4 @@ for num in range(from_num, to_num + 1):
 
 
 
+#Comentario final
