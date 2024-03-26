@@ -5,6 +5,7 @@ lower = 1
 upper = 100
 
 print("Prime numbers between", lower, "and", upper, "are:")
+# Funciona acá
 
 for num in range(lower, upper + 1):
    # all prime numbers are greater than 1
@@ -14,3 +15,6 @@ for num in range(lower, upper + 1):
                break
        else:
            print(num)
+
+# Y funciona acá también
+
