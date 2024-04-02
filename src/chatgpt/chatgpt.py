@@ -69,7 +69,7 @@ def manejar_eventos_teclado():
     """Maneja los eventos del teclado. No precisa parámetros."""
     global ultimo_convers
     while True:
-        entrada = input("")
+        entrada = input("") #Se recibe entrada
         if entrada == "\x1b[A":  # "cursor Up"
             ultima_consulta = input("Ingrese su consulta (editar la última consulta): ")
             procesar_consulta(ultima_consulta) #se llama a procesar consulta nuevamente
